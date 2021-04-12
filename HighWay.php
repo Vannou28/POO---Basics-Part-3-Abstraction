@@ -15,13 +15,13 @@ abstract class HighWay {
     }
 
 
-    abstract function addVehicle();
+    abstract public function addVehicule (Vehicule $vehicule);
 
 
 
-    public function setCurrentVehicules(array $currentVehicules): void
+    public function setCurrentVehicules(Vehicule $vehicule)
     {
-        $this->currentVehicules[]= $currentVehicules;
+        $this->currentVehicules[]= $vehicule;
     }
 
     public function getCurrentVehicules(): array

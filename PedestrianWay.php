@@ -1,9 +1,9 @@
 <?php
 
-require_once 'highWay.php';
+require_once 'HighWay.php';
 
 
-final class PedestrianWay extends highWay{
+final class PedestrianWay extends HighWay{
 
     public function __construct(int $nbLane = 1, int $maxSpeed = 10)
     {

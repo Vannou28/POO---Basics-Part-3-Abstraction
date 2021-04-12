@@ -2,7 +2,7 @@
 
 
 
-abstract class Vehicle
+abstract class Vehicule
 {
  
     protected string $color;

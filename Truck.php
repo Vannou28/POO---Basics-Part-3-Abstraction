@@ -6,7 +6,7 @@ require_once 'Vehicule.php';
 
 
 
-class Truck extends Vehicle
+class Truck extends Vehicule
 {
 
     private string $energy;

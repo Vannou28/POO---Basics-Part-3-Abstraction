@@ -1,9 +1,9 @@
 <?php
 
-require_once 'highWay.php';
+require_once 'HighWay.php';
 
 
-final class MotorWay extends highWay{
+final class MotorWay extends HighWay{
 
     public function __construct(int $nbLane = 4, int $maxSpeed = 130)
     {
@@ -12,9 +12,11 @@ final class MotorWay extends highWay{
     }
 
 
-    public function addVehicule( Vehicule $vehicule ){
-
-        $this->setCurrentVehicules($vehicule);
+    public function addVehicule (Vehicule $vehicule): void
+    {
+        if (!$vehicule instanceof Bicycle){
+            $this->setCurrentVehicules($vehicule);
+        }
         
     } 
 }

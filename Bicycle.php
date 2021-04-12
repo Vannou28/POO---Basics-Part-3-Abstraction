@@ -4,7 +4,7 @@
 require_once 'Vehicule.php';
 
 // Bicycle.php
-class Bicycle extends Vehicle
+class Bicycle extends Vehicule
 {
 }
 
